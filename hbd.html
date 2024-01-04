@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff3399;
+        }
+
+        p {
+            color: #333;
+            font-size: 18px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday!</h1>
+        <p>Wishing you a day filled with love, joy, and lots of surprises!</p>
+        <img src="birthday_image.jpg" alt="Birthday Celebration">
+        <button onclick="showMessage()">Click for a special message</button>
+        <p id="birthdayMessage" style="display: none; color: #ff3399; font-size: 20px; font-weight: bold;"></p>
+
+        <script>
+            function showMessage() {
+                var message = "Wishing you a fantastic year ahead filled with laughter and happiness!";
+                document.getElementById("birthdayMessage").innerText = message;
+                document.getElementById("birthdayMessage").style.display = "block";
+            }
+        </script>
+    </div>
+</body>
+</html>
